@@ -141,9 +141,8 @@ html {
   font-size: 62.5%;
 }
 .container {
-  max-width: 880px;
+  max-width: 1025px;
   margin: 0 auto;
-  border: yellow 1px solid;
   flex-direction: column;
   align-items: center;
   font-family: Roboto, Arial, sans-serif;
@@ -152,80 +151,86 @@ header {
   width: 100%;
   display: flex;
 }
-.intro h2 {
+.dropdown h1 {
+  font-size: 22px;
   position: absolute;
-  margin-top: 400px;
-  margin-left: 50px;
-  border: blue 1px solid;
+  margin-top: 15px;
+  margin-left: 88px;
   color: white;
-  font-size: 50px;
 }
-.intro .main-header-pic {
-  display: block;
-  width: 100%;
-  margin: 30px auto;
-}
-.navbar {
-  background: gray;
-  color: white;
-  font-size: 20px;
-}
-/* Dropdown Button */
 .dropbtn {
-  background-color: #3498DB;
+  background-color: #777777;
   color: white;
+  width: 1025px;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  text-align: right;
+  padding-right: 50px;
 }
-/* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: #777777;
 }
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #777777;
+  width: 1025px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  text-align: center;
 }
-/* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: white;
+  font-size: 25px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  justify-content: center;
 }
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
 }
+.intro h2 {
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 75px;
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.intro .main-header-pic {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 550px;
+}
 .architect {
   display: flex;
-  margin-top: 72px;
-  padding: 50px 70px 15px 70px;
+  margin-top: 30px;
+  align-items: center;
+  padding: 20px 80px 15px 70px;
+}
+.architect h3 {
+  font-weight: bold;
 }
 .architect .architect-text,
 h3 {
-  font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
 }
 .architect .architect-text p {
-  font-size: 17px;
+  font-size: 16px;
   text-align: justify;
   letter-spacing: 5px;
   display: flex;
@@ -233,14 +238,16 @@ h3 {
   flex-flow: row;
   align-items: center;
   margin: 0 9.32% 0 0;
+  font-weight: none;
 }
 .architect .architect-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
-  width: 57%;
-  height: 32px;
-  margin-top: 10px;
+  width: 136px;
+  height: 48px;
+  margin-top: 40px;
+  margin-left: 12px;
   cursor: pointer;
 }
 .architect .architect-text button:hover {
@@ -249,45 +256,65 @@ h3 {
 }
 .designs {
   display: flex;
-  margin-top: 72px;
-  padding: 50px 70px 15px 70px;
+  margin-top: 65px;
+  align-items: center;
+  padding: 20px 70px 15px 80px;
+}
+.designs h3 {
+  font-weight: bold;
 }
 .designs .designs-text,
 h3 {
-  font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
-  margin: 0 0 0 9.32%;
+  margin-left: 30px;
 }
 .designs .designs-text p {
-  font-size: 17px;
+  font-size: 16px;
   text-align: justify;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: row;
   align-items: center;
-  margin: 0 0 0 9.32%;
 }
 .designs .designs-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
-  width: 57%;
-  height: 32px;
-  margin-top: 10px;
+  width: 136px;
+  height: 48px;
+  margin-top: 20px;
   cursor: pointer;
 }
 .designs .designs-text button:hover {
   background: black;
   color: white;
 }
-.projects h2 {
+.projects {
+  margin-top: 82px;
+}
+.projects h3 {
+  font-size: 24px;
   font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 10px;
-  text-align: right;
-  margin: 0 9.32% 0 0;
+  margin-left: 79px;
+}
+.villas .main-header-pic {
+  margin-top: 35px;
+  margin-left: 80px;
+}
+.projects .villas h2 {
+  position: absolute;
+  font-size: 26px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-left: 621px;
+  margin-top: 211px;
+  border: 1px white solid;
+  height: 95px;
+  width: 315px;
+  padding-top: 31px;
+  background-color: #D8D8D8;
 }
 .projects p {
   font-size: 17px;
@@ -297,13 +324,62 @@ h3 {
   justify-content: center;
   flex-flow: row;
   align-items: center;
-  margin: 0 20% 0 20%;
+  margin: 90px 27% 0 27%;
+}
+.outskirts .main-header-pic {
+  margin-top: 81px;
+  margin-left: 80px;
+}
+.projects .outskirts h2 {
+  position: absolute;
+  font-size: 26px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 261px;
+  border: 1px white solid;
+  height: 95px;
+  width: 315px;
+  padding-top: 31px;
+  background-color: #D8D8D8;
+}
+.blocks .main-header-pic {
+  margin-top: 70px;
+  margin-left: 80px;
+}
+.projects .blocks h2 {
+  position: absolute;
+  font-size: 26px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-left: 621px;
+  margin-top: 241px;
+  border: 1px white solid;
+  height: 95px;
+  width: 315px;
+  padding-top: 31px;
+  background-color: #D8D8D8;
 }
 .contact {
   Background: #828282;
   display: flex;
   align-content: row;
   color: white;
+  margin-top: 77px;
+  height: 200px;
+  padding-top: 64px;
+  padding-left: 82px;
+}
+.contact input {
+  margin-top: 20px;
+  height: 44px;
+  width: 280px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.contact .interest p {
+  margin-top: 5px;
+  font-size: 13px;
 }
 .contact h4 {
   font-size: 20px;
@@ -312,10 +388,24 @@ h3 {
 .contact p {
   font-size: 16px;
 }
+.ny {
+  margin-left: 57px;
+  line-height: 1.5;
+}
+.fl {
+  margin-left: 58px;
+  line-height: 1.5;
+}
+.ca {
+  margin-left: 72px;
+  line-height: 1.5;
+}
 footer {
   Background: #828282;
   display: flex;
   justify-content: center;
   font-size: 14px;
   color: white;
+  height: 50px;
+  padding-top: 21px;
 }
