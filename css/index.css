@@ -241,7 +241,7 @@ h3 {
   font-weight: none;
 }
 .architect .architect-text button {
-  border: 1px double black;
+  border: 1px solid black;
   font-size: 16px;
   background: white;
   width: 136px;
@@ -279,7 +279,7 @@ h3 {
   align-items: center;
 }
 .designs .designs-text button {
-  border: 1px double black;
+  border: 1px solid black;
   font-size: 16px;
   background: white;
   width: 136px;
@@ -408,4 +408,208 @@ footer {
   color: white;
   height: 50px;
   padding-top: 21px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .dropdown h1 {
+    margin-left: 20px;
+  }
+  .dropbtn {
+    width: 500px;
+    height: 75px;
+  }
+  .dropdown-content {
+    width: 500px;
+  }
+  .intro h2 {
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 55px;
+  }
+  .intro .main-header-pic {
+    height: 315px;
+  }
+  .architect {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+  .architect .main-header-pic {
+    width: 440px;
+    height: 420px;
+  }
+  .architect-text {
+    margin-top: 43px;
+    width: 440px;
+  }
+  .architect h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: auto;
+  }
+  .architect .architect-text p {
+    font-size: 22px;
+    margin: 43px auto 0;
+  }
+  .architect .architect-text button {
+    width: 440px;
+    height: 70px;
+    margin: 55px auto;
+    font-size: 24px;
+    border: 2px solid black;
+  }
+  .designs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .designs .main-header-pic {
+    width: 440px;
+    height: 420px;
+  }
+  .designs-text {
+    margin-top: 43px;
+    width: 440px;
+  }
+  .designs h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: auto;
+  }
+  .designs .designs-text p {
+    font-size: 22px;
+    margin: 43px auto 0;
+  }
+  .designs .designs-text button {
+    width: 440px;
+    height: 70px;
+    margin: 55px auto;
+    font-size: 24px;
+    border: 2px solid black;
+  }
+  .projects {
+    margin-top: 0;
+  }
+  .projects h3 {
+    font-size: 36px;
+  }
+  .villas {
+    display: flex;
+    flex-direction: column;
+  }
+  .villas .main-header-pic {
+    margin: 20px auto;
+    width: 100%;
+    height: 300px;
+  }
+  .projects .villas h2 {
+    margin: 300px 20px 0 20px;
+    width: 440px;
+    height: 150px;
+    font-size: 40px;
+    padding-top: 55px;
+  }
+  .projects .villas p {
+    margin: 160px auto 0;
+    font-size: 24px;
+    width: 440px;
+  }
+  .outskirts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  .outskirts .main-header-pic {
+    margin: 20px auto;
+    width: 100%;
+    height: 300px;
+  }
+  .projects .outskirts h2 {
+    margin: 300px 20px 0 20px;
+    width: 440px;
+    height: 150px;
+    font-size: 40px;
+    padding-top: 55px;
+  }
+  .projects .outskirts p {
+    margin: 160px auto 0;
+    font-size: 24px;
+    width: 440px;
+  }
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  .blocks .main-header-pic {
+    margin: 20px auto;
+    width: 100%;
+    height: 300px;
+  }
+  .projects .blocks h2 {
+    margin: 300px 20px 0 20px;
+    width: 440px;
+    height: 150px;
+    font-size: 40px;
+    padding-top: 55px;
+  }
+  .projects .blocks p {
+    margin: 160px auto 0;
+    font-size: 24px;
+    width: 440px;
+  }
+  .contact {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+  .contact h4 {
+    font-size: 28px;
+  }
+  .contact input {
+    margin-top: 30px;
+    width: 440px;
+    height: 70px;
+    font-size: 24px;
+    color: gray;
+  }
+  .contact .interest p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .ny {
+    margin-top: 30px;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .ny p {
+    font-size: 20px;
+  }
+  .fl {
+    margin-top: 30px;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .fl p {
+    font-size: 20px;
+  }
+  .ca {
+    margin-top: 30px;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .ca p {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 18px;
+    height: 70px;
+    justify-content: left;
+    padding-left: 20px;
+  }
 }
