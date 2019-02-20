@@ -95,17 +95,17 @@ header {
   padding: 16px;
   font-size: 16px;
   border: none;
-  cursor: pointer;
   text-align: right;
   padding-right: 50px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #777777;
+.hamburgerClose {
+  cursor: pointer;
 }
 
+
 .dropdown {
-  position: relative;
+  position: fixed;
   display: inline-block;
 }
 
@@ -114,7 +114,6 @@ header {
   position: absolute;
   background-color: #777777;
   width: 1025px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: center;
 }
@@ -132,10 +131,48 @@ header {
 
 .show {display:block;}
 
+
+#mhp1 {      
+  display: block;
+} 
+#mhp2 {      
+  display: none;
+} 
+
+#homeimage1a {      
+  display: block;
+} 
+#homeimage1b {      
+  display: none;
+} 
+
+#villaimg1 {      
+  display: block;
+} 
+#villaimg2 {      
+  display: none;
+} 
+
+#outskirtimg1 {      
+  display: block;
+} 
+
+#outskirtimg2 {      
+  display: none;
+} 
+
+#blocksimg1 {      
+  display: block;
+} 
+
+#blocksimg2 {      
+  display: none;
+} 
+
 .intro h2{
   position: absolute;
-  margin-top: 280px;
-  margin-left: 75px;
+  margin-top: 330px;
+  margin-left: 77px;
   color: white;
   font-size: 65px;
   font-weight: bold;
@@ -146,7 +183,7 @@ header {
   display: block;
   width: 100%;
   margin: auto;
-  height: 550px;
+  height: 600px;
 }
 
 .architect {
@@ -163,6 +200,8 @@ header {
 .architect .architect-text, h3 {
   font-size: 22px;
   margin-bottom: 10px;
+  margin-top: 10px;
+
 }
 
 .architect .architect-text p {
@@ -183,7 +222,7 @@ header {
   background: white;
   width: 136px;  
   height: 48px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 12px;
   cursor: pointer;
 }
@@ -246,7 +285,7 @@ header {
 }
 
 .villas .main-header-pic {
-  margin-top: 35px;
+  margin-top: 45px;
   margin-left: 80px;
 }
 
@@ -256,7 +295,7 @@ header {
   letter-spacing: 6px;
   text-align: center;
   margin-left: 621px;
-  margin-top: 211px;
+  margin-top: 180px;
   border: 1px white solid;
   height: 95px;
   width: 315px;
@@ -286,7 +325,7 @@ header {
   letter-spacing: 6px;
   text-align: center;
   margin-left: 80px;
-  margin-top: 261px;
+  margin-top: 180px;
   border: 1px white solid;
   height: 95px;
   width: 315px;
@@ -305,7 +344,7 @@ header {
   letter-spacing: 6px;
   text-align: center;
   margin-left: 621px;
-  margin-top: 241px;
+  margin-top: 175px;
   border: 1px white solid;
   height: 95px;
   width: 315px;
@@ -318,7 +357,7 @@ header {
   display: flex;
   align-content: row;
   color: white;
-  margin-top: 77px;
+  margin-top: 82px;
   height: 200px;
   padding-top: 64px;
   padding-left: 82px;
@@ -390,6 +429,44 @@ footer {
   .dropdown-content {
     width: 500px;
   }
+  
+  #mhp1 {      
+    display: none;
+  } 
+  #mhp2 {      
+    display: block;
+  } 
+
+  #homeimage1a {      
+    display: none;
+  } 
+  #homeimage1b {      
+    display: block;
+  } 
+
+  #villaimg1 {      
+    display: none;
+  } 
+  #villaimg2 {      
+    display: block;
+  } 
+
+  #outskirtimg1 {      
+    display: none;
+  } 
+  #outskirtimg2 {      
+    display: block;
+  } 
+
+  #blocksimg1 {      
+    display: none;
+  } 
+  #blocksimg2 {      
+    display: block;
+  } 
+
+
+
 
   .intro h2 {
     margin-top: 100px;
@@ -633,13 +710,13 @@ footer {
   display: block;
   width: 100%;
   margin: auto;
-  height: 190px;
+  height: 250px;
 }
 
 .intro-service h2{
   position: absolute;
-  margin-top: 100px;
-  margin-left: 75px;
+  margin-top: 160px;
+  margin-left: 79px;
   color: white;
   font-size: 65px;
   font-weight: bold;
@@ -700,18 +777,17 @@ footer {
 
   .tabs-links {
     display: flex;
-    margin-left: 62px;
+    justify-content: center;
   }
 
   .tabs-link {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 18px;
     padding: 14px 0;
     width: 188px;
     font-size: 20px;
     font-weight: bold;
-    
     border: 1px solid black;
     cursor: pointer;
     &:hover {
