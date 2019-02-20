@@ -151,14 +151,10 @@ header {
   width: 100%;
   display: flex;
 }
-.dropdown h1 {
-  font-size: 22px;
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 88px;
-  color: white;
-}
-.dropbtn {
+.nav {
+  position: fixed;
+  display: inline-block;
+  z-index: 9999;
   background-color: #777777;
   color: white;
   width: 1025px;
@@ -168,31 +164,55 @@ header {
   text-align: right;
   padding-right: 50px;
 }
-.hamburgerClose {
-  cursor: pointer;
-}
-.dropdown {
-  position: fixed;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
+.nav h1 {
+  font-size: 22px;
   position: absolute;
-  background-color: #777777;
-  width: 1025px;
+  margin-left: 72px;
+  color: white;
+}
+.nav .hamburgerClose {
+  cursor: pointer;
+  margin-right: 32px;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+  z-index: 500;
   text-align: center;
 }
-.dropdown-content a {
-  color: white;
-  font-size: 25px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  justify-content: center;
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
-.dropdown-content a:hover {
-  background-color: #222222;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 .show {
   display: block;
@@ -251,8 +271,7 @@ header {
 .architect h3 {
   font-weight: bold;
 }
-.architect .architect-text,
-h3 {
+.architect .architect-text h3 {
   font-size: 22px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -291,8 +310,7 @@ h3 {
 .designs h3 {
   font-weight: bold;
 }
-.designs .designs-text,
-h3 {
+.designs .designs-text h3 {
   font-size: 22px;
   margin-bottom: 10px;
   margin-left: 30px;
@@ -327,7 +345,17 @@ h3 {
   font-weight: bold;
   margin-left: 79px;
 }
-.villas .main-header-pic {
+.projects p {
+  font-size: 17px;
+  text-align: left;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  align-items: center;
+  margin: 90px 27% 0 27%;
+}
+.projects .villas .main-header-pic {
   margin-top: 45px;
   margin-left: 80px;
 }
@@ -344,17 +372,7 @@ h3 {
   padding-top: 31px;
   background-color: #D8D8D8;
 }
-.projects p {
-  font-size: 17px;
-  text-align: left;
-  letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  align-items: center;
-  margin: 90px 27% 0 27%;
-}
-.outskirts .main-header-pic {
+.projects .outskirts .main-header-pic {
   margin-top: 81px;
   margin-left: 80px;
 }
@@ -371,11 +389,11 @@ h3 {
   padding-top: 31px;
   background-color: #D8D8D8;
 }
-.blocks .main-header-pic {
+.projects .blocks .main-header-pic {
   margin-top: 70px;
   margin-left: 80px;
 }
-.projects .blocks h2 {
+.projects h2 {
   position: absolute;
   font-size: 26px;
   letter-spacing: 6px;
@@ -398,6 +416,10 @@ h3 {
   padding-top: 64px;
   padding-left: 82px;
 }
+.contact h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
 .contact input {
   margin-top: 20px;
   height: 44px;
@@ -409,22 +431,18 @@ h3 {
   margin-top: 5px;
   font-size: 13px;
 }
-.contact h4 {
-  font-size: 20px;
-  font-weight: bold;
-}
 .contact p {
   font-size: 16px;
 }
-.ny {
+.contact .ny {
   margin-left: 57px;
   line-height: 1.5;
 }
-.fl {
+.contact .fl {
   margin-left: 58px;
   line-height: 1.5;
 }
-.ca {
+.contact .ca {
   margin-left: 72px;
   line-height: 1.5;
 }
@@ -440,16 +458,6 @@ footer {
 @media (max-width: 500px) {
   .container {
     width: 100%;
-  }
-  .dropdown h1 {
-    margin-left: 20px;
-  }
-  .dropbtn {
-    width: 500px;
-    height: 75px;
-  }
-  .dropdown-content {
-    width: 500px;
   }
   #mhp1 {
     display: none;
@@ -498,14 +506,14 @@ footer {
     width: 440px;
     height: 420px;
   }
-  .architect-text {
-    margin-top: 43px;
-    width: 440px;
-  }
   .architect h3 {
     font-size: 36px;
     text-align: center;
     margin: auto;
+  }
+  .architect .architect-text {
+    margin-top: 43px;
+    width: 440px;
   }
   .architect .architect-text p {
     font-size: 22px;
@@ -528,14 +536,14 @@ footer {
     width: 440px;
     height: 420px;
   }
-  .designs-text {
-    margin-top: 43px;
-    width: 440px;
-  }
   .designs h3 {
     font-size: 36px;
     text-align: center;
     margin: auto;
+  }
+  .designs .designs-text {
+    margin-top: 43px;
+    width: 440px;
   }
   .designs .designs-text p {
     font-size: 22px;
@@ -563,14 +571,14 @@ footer {
     width: 100%;
     height: 300px;
   }
-  .projects .villas h2 {
+  .villas h2 {
     margin: 300px 20px 0 20px;
     width: 440px;
     height: 150px;
     font-size: 40px;
     padding-top: 55px;
   }
-  .projects .villas p {
+  .villas p {
     margin: 160px auto 0;
     font-size: 24px;
     width: 440px;
@@ -585,14 +593,14 @@ footer {
     width: 100%;
     height: 300px;
   }
-  .projects .outskirts h2 {
+  .outskirts h2 {
     margin: 300px 20px 0 20px;
     width: 440px;
     height: 150px;
     font-size: 40px;
     padding-top: 55px;
   }
-  .projects .outskirts p {
+  .outskirts p {
     margin: 160px auto 0;
     font-size: 24px;
     width: 440px;
@@ -607,14 +615,14 @@ footer {
     width: 100%;
     height: 300px;
   }
-  .projects .blocks h2 {
+  .blocks h2 {
     margin: 300px 20px 0 20px;
     width: 440px;
     height: 150px;
     font-size: 40px;
     padding-top: 55px;
   }
-  .projects .blocks p {
+  .blocks p {
     margin: 160px auto 0;
     font-size: 24px;
     width: 440px;
@@ -640,28 +648,28 @@ footer {
     margin-top: 15px;
     font-size: 18px;
   }
-  .ny {
+  .contact .ny {
     margin-top: 30px;
     margin-left: 0;
     line-height: 2;
   }
-  .ny p {
+  .contact .ny p {
     font-size: 20px;
   }
-  .fl {
+  .contact .fl {
     margin-top: 30px;
     margin-left: 0;
     line-height: 2;
   }
-  .fl p {
+  .contact .fl p {
     font-size: 20px;
   }
-  .ca {
+  .contact .ca {
     margin-top: 30px;
     margin-left: 0;
     line-height: 2;
   }
-  .ca p {
+  .contact .ca p {
     font-size: 20px;
   }
   footer {

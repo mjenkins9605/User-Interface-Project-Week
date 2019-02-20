@@ -13,14 +13,17 @@
 
 <body>
 	<div class="container">
-		
-		<div class="dropdown">
+
+		<div class="nav">
 			<h1>S&J</h1>
-			<button onclick="myFunction()" class="dropbtn"><img class="hamburgerClose" src="img/nav-hamburger.png"></button>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="index.html">Home</a>
-				<a href="services.html">Services</a>
-				<a href="#">Contact</a>
+			<span onclick="openNav()"><img class="hamburgerClose" src="img/nav-hamburger.png"></span>
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="#">Contact</a>
+				</div>
 			</div>
 		</div>
 

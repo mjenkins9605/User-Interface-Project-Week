@@ -80,15 +80,12 @@ header {
   display: flex;
 }
 
-.dropdown h1 {
-  font-size: 22px;
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 88px;
-  color: white;
-}
 
-.dropbtn {
+
+.nav {
+  position: fixed;
+  display: inline-block;
+  z-index: 9999;
   background-color: #777777;
   color: white;
   width: 1025px;
@@ -97,37 +94,64 @@ header {
   border: none;
   text-align: right;
   padding-right: 50px;
+  h1 {
+    font-size: 22px;
+    position: absolute;
+    margin-left: 72px;
+    color: white;
+  }
+  .hamburgerClose {
+    cursor: pointer;
+    margin-right: 32px;
+  }
 }
 
-.hamburgerClose {
-  cursor: pointer;
-}
 
 
-.dropdown {
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  margin: 0 auto;
   position: fixed;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #777777;
-  width: 1025px;
   z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+  z-index: 500;
   text-align: center;
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
 }
 
-.dropdown-content a {
-  color: white;
-  font-size: 25px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  justify-content: center;
-}
 
-.dropdown-content a:hover {background-color: #222222}
+
 
 .show {display:block;}
 
@@ -169,7 +193,9 @@ header {
   display: none;
 } 
 
-.intro h2{
+
+.intro {
+  h2 {
   position: absolute;
   margin-top: 330px;
   margin-left: 77px;
@@ -177,180 +203,177 @@ header {
   font-size: 65px;
   font-weight: bold;
   line-height: 1.1;
+  }
+  .main-header-pic {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 600px;
+  }
 }
 
-.intro .main-header-pic {
-  display: block;
-  width: 100%;
-  margin: auto;
-  height: 600px;
-}
 
 .architect {
   display: flex;
   margin-top: 30px;
   align-items: center;
   padding: 20px 80px 15px 70px;
+  h3 {
+    font-weight: bold;
+  }
+  .architect-text {
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 16px;
+      text-align: justify;
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      flex-flow: row;
+      align-items: center;
+      margin: 0 9.32% 0 0;
+      font-weight: none;
+    }
+    button {
+      border: 1px solid black;
+      font-size: 16px;
+      background: white;
+      width: 136px;  
+      height: 48px;
+      margin-top: 10px;
+      margin-left: 12px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: black;
+      color: white;
+    }
+  } 
 }
 
-.architect h3 {
-  font-weight: bold;
-}
 
-.architect .architect-text, h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  margin-top: 10px;
 
-}
-
-.architect .architect-text p {
-  font-size: 16px;
-  text-align: justify;
-  letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  align-items: center;
-  margin: 0 9.32% 0 0;
-  font-weight: none;
-}
-
-.architect .architect-text button {
-  border: 1px solid black;
-  font-size: 16px;
-  background: white;
-  width: 136px;  
-  height: 48px;
-  margin-top: 10px;
-  margin-left: 12px;
-  cursor: pointer;
-}
-
-.architect .architect-text button:hover {
-  background: black;
-  color: white;
-}
 
 .designs {
   display: flex;
   margin-top: 65px;
   align-items: center;
   padding: 20px 70px 15px 80px;
+  h3 {
+    font-weight: bold;
+  }
+  .designs-text {
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+    p {
+      font-size: 16px;
+      text-align: justify;
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      flex-flow: row;
+      align-items: center;
+    }
+    button {
+      border: 1px solid black;
+      font-size: 16px;
+      background: white;
+      width: 136px;  
+      height: 48px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: black;
+      color: white;
+    }
+  } 
 }
 
-.designs h3 {
-  font-weight: bold;
-}
-
-.designs .designs-text, h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-}
-
-.designs .designs-text p {
-  font-size: 16px;
-  text-align: justify;
-  letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  align-items: center;
-}
-
-.designs .designs-text button {
-  border: 1px solid black;
-  font-size: 16px;
-  background: white;
-  width: 136px;  
-  height: 48px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.designs .designs-text button:hover {
-  background: black;
-  color: white;
-}
 
 .projects {
   margin-top: 82px;
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 79px;
+  }
+  p {
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    margin: 90px 27% 0 27%;
+  }
+  .villas {
+    .main-header-pic {
+      margin-top: 45px;
+      margin-left: 80px;
+    }
+    h2 {
+      position: absolute;
+      font-size: 26px;
+      letter-spacing: 6px;
+      text-align: center;
+      margin-left: 621px;
+      margin-top: 180px;
+      border: 1px white solid;
+      height: 95px;
+      width: 315px;
+      padding-top: 31px;
+      background-color: #D8D8D8;
+    }
+  }
+  .outskirts {
+    .main-header-pic {
+      margin-top: 81px;
+      margin-left: 80px;
+    }
+    h2 {
+      position: absolute;
+      font-size: 26px;
+      letter-spacing: 6px;
+      text-align: center;
+      margin-left: 80px;
+      margin-top: 180px;
+      border: 1px white solid;
+      height: 95px;
+      width: 315px;
+      padding-top: 31px;
+      background-color: #D8D8D8;
+    }
+  }
+  .blocks 
+  .main-header-pic {
+    margin-top: 70px;
+    margin-left: 80px;
+  }
+  h2 {
+    position: absolute;
+    font-size: 26px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-left: 621px;
+    margin-top: 175px;
+    border: 1px white solid;
+    height: 95px;
+    width: 315px;
+    padding-top: 31px;
+    background-color: #D8D8D8;
+  }
 }
 
-.projects h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 79px;
-}
 
-.villas .main-header-pic {
-  margin-top: 45px;
-  margin-left: 80px;
-}
-
-.projects .villas h2 {
-  position: absolute;
-  font-size: 26px;
-  letter-spacing: 6px;
-  text-align: center;
-  margin-left: 621px;
-  margin-top: 180px;
-  border: 1px white solid;
-  height: 95px;
-  width: 315px;
-  padding-top: 31px;
-  background-color: #D8D8D8;
-}
-
-.projects p {
-  font-size: 17px;
-  text-align: left;
-  letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  align-items: center;
-  margin: 90px 27% 0 27%;
-}
-
-.outskirts .main-header-pic {
-  margin-top: 81px;
-  margin-left: 80px;
-}
-
-.projects .outskirts h2 {
-  position: absolute;
-  font-size: 26px;
-  letter-spacing: 6px;
-  text-align: center;
-  margin-left: 80px;
-  margin-top: 180px;
-  border: 1px white solid;
-  height: 95px;
-  width: 315px;
-  padding-top: 31px;
-  background-color: #D8D8D8;
-}
-
-.blocks .main-header-pic {
-  margin-top: 70px;
-  margin-left: 80px;
-}
-
-.projects .blocks h2 {
-  position: absolute;
-  font-size: 26px;
-  letter-spacing: 6px;
-  text-align: center;
-  margin-left: 621px;
-  margin-top: 175px;
-  border: 1px white solid;
-  height: 95px;
-  width: 315px;
-  padding-top: 31px;
-  background-color: #D8D8D8;
-}
 
 .contact {
   Background: #828282;
@@ -361,44 +384,38 @@ header {
   height: 200px;
   padding-top: 64px;
   padding-left: 82px;
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  input {
+    margin-top: 20px;
+    height: 44px;
+    width: 280px;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  .interest p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .ny {
+    margin-left: 57px;
+    line-height: 1.5;
+  }
+  .fl {
+    margin-left: 58px;
+    line-height: 1.5;
+  }
+  .ca {
+    margin-left: 72px;
+    line-height: 1.5;
+  }
 }
 
-.contact input {
-  margin-top: 20px;
-  height: 44px;
-  width: 280px;
-  font-size: 16px;
-  padding-left: 5px;
-}
-
-.contact .interest p {
-  margin-top: 5px;
-  font-size: 13px;
-}
-
-.contact h4 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.contact p {
-  font-size: 16px;
-}
-
-.ny {
-  margin-left: 57px;
-  line-height: 1.5;
-}
-
-.fl {
-  margin-left: 58px;
-  line-height: 1.5;
-}
-
-.ca {
-  margin-left: 72px;
-  line-height: 1.5;
-}
 
 footer {
   Background: #828282;
@@ -417,18 +434,7 @@ footer {
     width: 100%;
   }
 
-  .dropdown h1 {
-    margin-left: 20px;
-  }
-
-  .dropbtn {
-    width: 500px;
-    height: 75px;
-  }
-
-  .dropdown-content {
-    width: 500px;
-  }
+ 
   
   #mhp1 {      
     display: none;
@@ -466,175 +472,164 @@ footer {
   } 
 
 
-
-
-  .intro h2 {
-    margin-top: 100px;
-    margin-left: 20px;
-    font-size: 55px;
+  .intro {
+    h2 {
+      margin-top: 100px;
+      margin-left: 20px;
+      font-size: 55px;
+    }
+    .main-header-pic {
+      height: 315px;
+    }
   }
 
-  .intro .main-header-pic {
-    height: 315px;
-  }
+
 
   .architect {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 0;
+    .main-header-pic {
+      width: 440px;
+      height: 420px;
+    }
+    h3 {
+      font-size: 36px;
+      text-align: center;
+      margin: auto;
+    }
+    .architect-text {
+      margin-top: 43px;
+      width: 440px;
+      p {
+        font-size: 22px;
+        margin: 43px auto 0;
+      }
+      button {
+        width: 440px;
+        height: 70px;
+        margin: 55px auto;
+        font-size: 24px;
+        border: 2px solid black;
+      }
+    }
   }
 
-  .architect .main-header-pic {
-    width: 440px;
-    height: 420px;
-  }
 
-  .architect-text {
-    margin-top: 43px;
-    width: 440px;
-  }
-
-  .architect h3 {
-    font-size: 36px;
-    text-align: center;
-    margin: auto;
-  }
-
-  .architect .architect-text p {
-    font-size: 22px;
-    margin: 43px auto 0;
-  }
-
-  .architect .architect-text button {
-    width: 440px;
-    height: 70px;
-    margin: 55px auto;
-    font-size: 24px;
-    border: 2px solid black;
-  }
 
   .designs {
     display: flex;
     flex-direction: column;
     margin-top: 0;
     padding-top: 0;
+    .main-header-pic {
+      width: 440px;
+      height: 420px;
+  
+    }
+    h3 {
+      font-size: 36px;
+      text-align: center;
+      margin: auto;
+    }
+    .designs-text {
+      margin-top: 43px;
+      width: 440px;
+      p {
+        font-size: 22px;
+        margin: 43px auto 0;
+      }
+      button {
+        width: 440px;
+        height: 70px;
+        margin: 55px auto;
+        font-size: 24px;
+        border: 2px solid black;
+      }
+    }
   }
 
-  .designs .main-header-pic {
-    width: 440px;
-    height: 420px;
 
-  }
-
-  .designs-text {
-    margin-top: 43px;
-    width: 440px;
-  }
-
-  .designs h3 {
-    font-size: 36px;
-    text-align: center;
-    margin: auto;
-  }
-
-  .designs .designs-text p {
-    font-size: 22px;
-    margin: 43px auto 0;
-  }
-
-  .designs .designs-text button {
-    width: 440px;
-    height: 70px;
-    margin: 55px auto;
-    font-size: 24px;
-    border: 2px solid black;
-  }
 
   .projects {
     margin-top: 0;
-
+    h3 {
+      font-size: 36px;
+    }
   }
 
-  .projects h3 {
-    font-size: 36px;
-  }
   
   .villas {
     display: flex;
     flex-direction: column;
+    .main-header-pic {
+      margin: 20px auto;
+      width: 100%;
+      height: 300px;
+    }
+    h2 {
+      margin: 300px 20px 0 20px;
+      width: 440px;
+      height: 150px;
+      font-size: 40px;
+      padding-top: 55px;
+    }
+    p {
+      margin: 160px auto 0;
+      font-size: 24px;
+      width: 440px;
+    }
   }
 
-  .villas .main-header-pic {
-    margin: 20px auto;
-    width: 100%;
-    height: 300px;
-  }
-
-  .projects .villas h2 {
-    margin: 300px 20px 0 20px;
-    width: 440px;
-    height: 150px;
-    font-size: 40px;
-    padding-top: 55px;
-  }
-
-  .projects .villas p {
-    margin: 160px auto 0;
-    font-size: 24px;
-    width: 440px;
-  }
 
   .outskirts {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
+    .main-header-pic {
+      margin: 20px auto;
+      width: 100%;
+      height: 300px;
+    }
+    h2 {
+      margin: 300px 20px 0 20px;
+      width: 440px;
+      height: 150px;
+      font-size: 40px;
+      padding-top: 55px;
+    }
+    p {
+      margin: 160px auto 0;
+      font-size: 24px;
+      width: 440px;
+    }
   }
 
-  .outskirts .main-header-pic {
-    margin: 20px auto;
-    width: 100%;
-    height: 300px;
-  }
-
-  .projects .outskirts h2 {
-    margin: 300px 20px 0 20px;
-    width: 440px;
-    height: 150px;
-    font-size: 40px;
-    padding-top: 55px;
-  }
-
-  .projects .outskirts p {
-    margin: 160px auto 0;
-    font-size: 24px;
-    width: 440px;
-  }
 
   .blocks {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
+    .main-header-pic {
+      margin: 20px auto;
+      width: 100%;
+      height: 300px;
+    }
+    h2 {
+      margin: 300px 20px 0 20px;
+      width: 440px;
+      height: 150px;
+      font-size: 40px;
+      padding-top: 55px;
+    }
+    p {
+      margin: 160px auto 0;
+      font-size: 24px;
+      width: 440px;
+    }
   }
 
-  .blocks .main-header-pic {
-    margin: 20px auto;
-    width: 100%;
-    height: 300px;
-  }
 
-  .projects .blocks h2 {
-    margin: 300px 20px 0 20px;
-    width: 440px;
-    height: 150px;
-    font-size: 40px;
-    padding-top: 55px;
-  }
-
-  .projects .blocks p {
-    margin: 160px auto 0;
-    font-size: 24px;
-    width: 440px;
-  }
 
   .contact {
     height: 1000px;
@@ -642,53 +637,44 @@ footer {
     flex-direction: column;
     padding-top: 40px;
     padding-left: 20px;
-  }
-
-  .contact h4{
-    font-size: 28px;
-  }
-
-  .contact input {
-    margin-top: 30px;
-    width: 440px;
-    height: 70px;
-    font-size: 24px;
-    color: gray;
-  }
-
-  .contact .interest p {
-    margin-top: 15px;
-    font-size: 18px;
-  }
-
-  .ny {
-    margin-top: 30px;
-    margin-left: 0;
-    line-height: 2;
-  }
-
-  .ny p {
-    font-size: 20px;
-  }
-
-  .fl {
-    margin-top: 30px;
-    margin-left: 0;
-    line-height: 2;
-  }
-
-  .fl p {
-    font-size: 20px;
-  }
-
-  .ca {
-    margin-top: 30px;
-    margin-left: 0;
-    line-height: 2;
-  }
-
-  .ca p {
-    font-size: 20px;
+    h4 {
+      font-size: 28px;
+    }
+    input {
+      margin-top: 30px;
+      width: 440px;
+      height: 70px;
+      font-size: 24px;
+      color: gray;
+    }
+    .interest p {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .ny {
+      margin-top: 30px;
+      margin-left: 0;
+      line-height: 2;
+      p {
+        font-size: 20px;
+      }
+    }
+    .fl {
+      margin-top: 30px;
+      margin-left: 0;
+      line-height: 2;
+      p {
+        font-size: 20px;
+      }
+    }
+    .ca {
+      margin-top: 30px;
+      margin-left: 0;
+      line-height: 2;
+      p {
+        font-size: 20px;
+      }
+    }
   }
 
   footer {
@@ -706,22 +692,24 @@ footer {
 // SERVICES CSS
 
 
-.intro-service .services-header-pic {
-  display: block;
-  width: 100%;
-  margin: auto;
-  height: 250px;
-}
+.intro-service {
+  .services-header-pic {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 250px;
+  }
+  h2{
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 79px;
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+} 
 
-.intro-service h2{
-  position: absolute;
-  margin-top: 160px;
-  margin-left: 79px;
-  color: white;
-  font-size: 65px;
-  font-weight: bold;
-  line-height: 1.1;
-}
 
 .top-section {
   margin: 54px 84px 0;
@@ -741,7 +729,6 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 52px;
-
   }
   .tabs-item {
     display: none; 
@@ -757,29 +744,23 @@ footer {
     display: flex;
     height: 400px;
     flex-direction: column;
- 
   }
-
   .tabs-item-img-combo {
     display: flex;
     flex-direction: row;
   }
-
   .tab-pic {
     padding-left: 20px;
   }
-
   .tabs-item-description {
     margin-top: 6px;
     font-size: 16px;
     line-height: 1.6;
   }
-
   .tabs-links {
     display: flex;
     justify-content: center;
   }
-
   .tabs-link {
     display: flex;
     justify-content: center;
