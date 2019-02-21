@@ -269,24 +269,24 @@ header {
   align-items: center;
   padding: 20px 80px 15px 70px;
 }
-.architect h3 {
-  font-weight: bold;
-}
 .architect .architect-text h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 12px;
 }
 .architect .architect-text p {
   font-size: 16px;
   text-align: justify;
-  letter-spacing: 5px;
+  line-height: 24px;
   display: flex;
   justify-content: center;
   flex-flow: row;
   align-items: center;
-  margin: 0 9.32% 0 0;
+  margin: 0 9.32% 10px 0;
   font-weight: none;
+  padding-left: 12px;
 }
 .architect .architect-text button {
   border: 1px solid black;
@@ -294,7 +294,7 @@ header {
   background: white;
   width: 136px;
   height: 48px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 12px;
   cursor: pointer;
 }
@@ -308,24 +308,24 @@ header {
   align-items: center;
   padding: 20px 70px 15px 80px;
 }
-.designs h3 {
-  font-weight: bold;
-}
 .designs .designs-text {
-  margin-left: 30px;
+  margin-left: 34px;
 }
 .designs .designs-text h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .designs .designs-text p {
   font-size: 16px;
   text-align: justify;
-  letter-spacing: 5px;
+  line-height: 24px;
   display: flex;
   justify-content: center;
   flex-flow: row;
   align-items: center;
+  margin-bottom: 10px;
 }
 .designs .designs-text button {
   border: 1px solid black;
@@ -349,14 +349,15 @@ header {
   margin-left: 79px;
 }
 .projects p {
-  font-size: 17px;
+  font-size: 18px;
   text-align: left;
-  letter-spacing: 5px;
+  line-height: 24px;
+  letter-spacing: 1.1;
   display: flex;
   justify-content: center;
   flex-flow: row;
   align-items: center;
-  margin: 90px 27% 0 27%;
+  margin: 95px 28% 0 28%;
 }
 .projects .villas .main-header-pic {
   margin-top: 45px;
@@ -375,6 +376,9 @@ header {
   padding-top: 31px;
   background-color: #D8D8D8;
 }
+.projects .outskirts {
+  padding-top: 18px;
+}
 .projects .outskirts .main-header-pic {
   margin-top: 81px;
   margin-left: 80px;
@@ -385,24 +389,27 @@ header {
   letter-spacing: 6px;
   text-align: center;
   margin-left: 80px;
-  margin-top: 180px;
+  margin-top: 260px;
   border: 1px white solid;
   height: 95px;
   width: 315px;
   padding-top: 31px;
   background-color: #D8D8D8;
 }
+.projects .blocks {
+  padding-top: 25px;
+}
 .projects .blocks .main-header-pic {
   margin-top: 70px;
   margin-left: 80px;
 }
-.projects h2 {
+.projects .blocks h2 {
   position: absolute;
   font-size: 26px;
   letter-spacing: 6px;
   text-align: center;
   margin-left: 621px;
-  margin-top: 175px;
+  margin-top: 250px;
   border: 1px white solid;
   height: 95px;
   width: 315px;
@@ -414,17 +421,18 @@ header {
   display: flex;
   align-content: row;
   color: white;
-  margin-top: 82px;
+  margin-top: 95px;
   height: 200px;
   padding-top: 64px;
   padding-left: 82px;
 }
 .contact h4 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: regular;
+  line-height: 24px;
 }
 .contact input {
-  margin-top: 20px;
+  margin-top: 16px;
   height: 44px;
   width: 280px;
   font-size: 16px;
@@ -436,18 +444,16 @@ header {
 }
 .contact p {
   font-size: 16px;
+  line-height: 26px;
 }
 .contact .ny {
   margin-left: 57px;
-  line-height: 1.5;
 }
 .contact .fl {
   margin-left: 58px;
-  line-height: 1.5;
 }
 .contact .ca {
   margin-left: 72px;
-  line-height: 1.5;
 }
 footer {
   Background: #828282;
@@ -457,6 +463,91 @@ footer {
   color: white;
   height: 50px;
   padding-top: 21px;
+}
+.intro-service .services-header-pic {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 250px;
+}
+.intro-service h2 {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 79px;
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.top-section {
+  margin: 54px 84px 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.tabs {
+  width: 100%;
+  margin-top: 33px;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  padding-top: 52px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 100%;
+  margin: 0 84px;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+}
+.tabs .tabs-item-img-combo {
+  display: flex;
+  flex-direction: row;
+}
+.tabs .tab-pic {
+  padding-left: 20px;
+}
+.tabs .tabs-item-description {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.tabs .tabs-links {
+  display: flex;
+  justify-content: center;
+}
+.tabs .tabs-link {
+  display: flex;
+  justify-content: center;
+  margin: 0 18px;
+  padding: 14px 0;
+  width: 188px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #222222;
+  color: #FFF;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  background-color: #5E9FB9;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: white;
 }
 @media (max-width: 500px) {
   .container {
@@ -647,7 +738,7 @@ footer {
     width: 440px;
   }
   .contact {
-    height: 1000px;
+    height: 735px;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -697,89 +788,4 @@ footer {
     justify-content: left;
     padding-left: 20px;
   }
-}
-.intro-service .services-header-pic {
-  display: block;
-  width: 100%;
-  margin: auto;
-  height: 250px;
-}
-.intro-service h2 {
-  position: absolute;
-  margin-top: 160px;
-  margin-left: 79px;
-  color: white;
-  font-size: 65px;
-  font-weight: bold;
-  line-height: 1.1;
-}
-.top-section {
-  margin: 54px 84px 0;
-  font-size: 16px;
-  line-height: 1.8;
-}
-.tabs {
-  width: 100%;
-  margin-top: 33px;
-}
-.tabs .tabs-items {
-  width: 100%;
-  height: 390px;
-  display: flex;
-  justify-content: center;
-  padding-top: 52px;
-}
-.tabs .tabs-item {
-  display: none;
-  width: 100%;
-  margin: 0 84px;
-}
-.tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-.tabs .tabs-item-selected {
-  display: flex;
-  height: 400px;
-  flex-direction: column;
-}
-.tabs .tabs-item-img-combo {
-  display: flex;
-  flex-direction: row;
-}
-.tabs .tab-pic {
-  padding-left: 20px;
-}
-.tabs .tabs-item-description {
-  margin-top: 6px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.tabs .tabs-links {
-  display: flex;
-  justify-content: center;
-}
-.tabs .tabs-link {
-  display: flex;
-  justify-content: center;
-  margin: 0 18px;
-  padding: 14px 0;
-  width: 188px;
-  font-size: 20px;
-  font-weight: bold;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.tabs .tabs-link:hover {
-  background-color: #222222;
-  color: #FFF;
-}
-.tabs .tabs-link-selected {
-  z-index: 2;
-  background-color: #5E9FB9;
-  color: black;
-}
-.tabs .tabs-link-selected:hover {
-  background-color: white;
 }
