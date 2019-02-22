@@ -433,7 +433,36 @@ footer {
 
 
 // SERVICES CSS
-
+#servicejumbo1 {      
+  display: block;
+} 
+#servicejumbo2 {      
+  display: none;
+} 
+#precons1 {      
+  display: block;
+} 
+#precons2 {      
+  display: none;
+} 
+#cons1 {      
+  display: block;
+} 
+#cons2 {      
+  display: none;
+} 
+#designimg1 {      
+  display: block;
+} 
+#designimg2 {      
+  display: none;
+} 
+#sustimg1 {      
+  display: block;
+} 
+#sustimg2 {      
+  display: none;
+} 
 
 .intro-service {
   .services-header-pic {
@@ -521,11 +550,10 @@ footer {
   }
   .tabs-link-selected {
     z-index: 2;
-    // border-right: 2px solid yellow;
     background-color: #5E9FB9;
-    color: black;
+    color: white;
     &:hover {
-      background-color: white;
+      background-color: #222222;
     }
   }
 }
@@ -803,5 +831,95 @@ footer {
     justify-content: left;
     padding-left: 20px;
   }
+
+
+  //Services Media
+
+  #servicejumbo1 {      
+    display: none;
+  } 
+  #servicejumbo2 {      
+    display: block;
+  } 
+  #precons1 {      
+    display: none;
+  } 
+  #precons2 {      
+    display: block;
+  } 
+  #cons1 {      
+    display: none;
+  } 
+  #cons2 {      
+    display: block;
+  } 
+  #designimg1 {      
+    display: none;
+  } 
+  #designimg2 {      
+    display: block;
+  } 
+  #sustimg1 {      
+    display: none;
+  } 
+  #sustimg2 {      
+    display: block;
+  } 
+
+  .intro-service {
+    .services-header-pic {
+      height: 310px;
+    }
+    h2 {
+      font-size: 42px;
+      margin-top: 238px;
+      margin-left: 20px;
+    }
+  }
+
+  .top-section {
+    font-size: 18px;
+    margin: 37px 20px 0;
+  }
+
+  .tabs {
+    margin-top: 28px;
+    .tabs-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .tabs-link {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      padding-top: 19px;
+      padding-bottom: 19px;
+      width: 350px;
+    }
+    .tabs-items {
+      padding-top: 47px;
+      height: 900px;
+    }
+    .tabs-item {
+      margin-left: 20px;
+      margin-right: 20px;
+      .tabs-item-title {
+        font-size: 28px;
+      }
+    }
+    .tabs-item-img-combo {
+      flex-direction: column;
+    }
+    .tabs-item-description {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 1.75;
+      letter-spacing: 1px;
+    }
+    .tab-pic {
+      margin-top: 50px;
+      padding-left: 0;
+    }
+  }
+
 
 }

@@ -464,6 +464,36 @@ footer {
   height: 50px;
   padding-top: 21px;
 }
+#servicejumbo1 {
+  display: block;
+}
+#servicejumbo2 {
+  display: none;
+}
+#precons1 {
+  display: block;
+}
+#precons2 {
+  display: none;
+}
+#cons1 {
+  display: block;
+}
+#cons2 {
+  display: none;
+}
+#designimg1 {
+  display: block;
+}
+#designimg2 {
+  display: none;
+}
+#sustimg1 {
+  display: block;
+}
+#sustimg2 {
+  display: none;
+}
 .intro-service .services-header-pic {
   display: block;
   width: 100%;
@@ -544,10 +574,10 @@ footer {
 .tabs .tabs-link-selected {
   z-index: 2;
   background-color: #5E9FB9;
-  color: black;
+  color: white;
 }
 .tabs .tabs-link-selected:hover {
-  background-color: white;
+  background-color: #222222;
 }
 @media (max-width: 500px) {
   .container {
@@ -787,5 +817,85 @@ footer {
     height: 70px;
     justify-content: left;
     padding-left: 20px;
+  }
+  #servicejumbo1 {
+    display: none;
+  }
+  #servicejumbo2 {
+    display: block;
+  }
+  #precons1 {
+    display: none;
+  }
+  #precons2 {
+    display: block;
+  }
+  #cons1 {
+    display: none;
+  }
+  #cons2 {
+    display: block;
+  }
+  #designimg1 {
+    display: none;
+  }
+  #designimg2 {
+    display: block;
+  }
+  #sustimg1 {
+    display: none;
+  }
+  #sustimg2 {
+    display: block;
+  }
+  .intro-service .services-header-pic {
+    height: 310px;
+  }
+  .intro-service h2 {
+    font-size: 42px;
+    margin-top: 238px;
+    margin-left: 20px;
+  }
+  .top-section {
+    font-size: 18px;
+    margin: 37px 20px 0;
+  }
+  .tabs {
+    margin-top: 28px;
+  }
+  .tabs .tabs-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tabs .tabs-link {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    width: 350px;
+  }
+  .tabs .tabs-items {
+    padding-top: 47px;
+    height: 900px;
+  }
+  .tabs .tabs-item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .tabs .tabs-item .tabs-item-title {
+    font-size: 28px;
+  }
+  .tabs .tabs-item-img-combo {
+    flex-direction: column;
+  }
+  .tabs .tabs-item-description {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.75;
+    letter-spacing: 1px;
+  }
+  .tabs .tab-pic {
+    margin-top: 50px;
+    padding-left: 0;
   }
 }
