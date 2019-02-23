@@ -133,7 +133,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Your Code Goes Here */
 * {
   box-sizing: border-box;
 }
@@ -150,6 +149,14 @@ html {
 header {
   width: 100%;
   display: flex;
+}
+.show {
+  display: block;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 .nav {
   position: fixed;
@@ -215,8 +222,118 @@ header {
   right: 45px;
   font-size: 60px;
 }
-.show {
-  display: block;
+@media (max-width: 500px) {
+  .nav {
+    width: 100%;
+    padding-right: 16px;
+  }
+  .nav h1 {
+    margin-left: 10px;
+  }
+  .nav .hamburgerClose {
+    margin-right: 10px;
+  }
+}
+.contact {
+  Background: #828282;
+  display: flex;
+  align-content: row;
+  color: white;
+  margin-top: 95px;
+  height: 200px;
+  padding-top: 64px;
+  padding-left: 82px;
+}
+.contact h4 {
+  font-size: 20px;
+  font-weight: regular;
+  line-height: 24px;
+}
+.contact input {
+  margin-top: 16px;
+  height: 44px;
+  width: 280px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.contact .interest p {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.contact p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.contact .ny {
+  margin-left: 57px;
+}
+.contact .fl {
+  margin-left: 58px;
+}
+.contact .ca {
+  margin-left: 72px;
+}
+footer {
+  Background: #828282;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  height: 50px;
+  padding-top: 21px;
+}
+@media (max-width: 500px) {
+  .contact {
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+  .contact h4 {
+    font-size: 28px;
+  }
+  .contact input {
+    margin-top: 30px;
+    width: 440px;
+    height: 70px;
+    font-size: 24px;
+    color: gray;
+  }
+  .contact .interest p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .contact .ny {
+    margin-top: 30px;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .contact .ny p {
+    font-size: 20px;
+  }
+  .contact .fl {
+    margin-top: 30px;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .contact .fl p {
+    font-size: 20px;
+  }
+  .contact .ca {
+    margin-top: 30px;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .contact .ca p {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 18px;
+    height: 70px;
+    justify-content: left;
+    padding-left: 20px;
+  }
 }
 #mhp1 {
   display: block;
@@ -228,6 +345,12 @@ header {
   display: block;
 }
 #homeimage1b {
+  display: none;
+}
+#homeimage2a {
+  display: block;
+}
+#homeimage2b {
   display: none;
 }
 #villaimg1 {
@@ -247,6 +370,108 @@ header {
 }
 #blocksimg2 {
   display: none;
+}
+@media (max-width: 500px) {
+  #mhp1 {
+    display: none;
+  }
+  #mhp2 {
+    display: block;
+  }
+  #homeimage1a {
+    display: none;
+  }
+  #homeimage1b {
+    display: block;
+  }
+  #homeimage2a {
+    display: none;
+  }
+  #homeimage2b {
+    display: block;
+  }
+  #villaimg1 {
+    display: none;
+  }
+  #villaimg2 {
+    display: block;
+    margin-left: 0;
+  }
+  #outskirtimg1 {
+    display: none;
+  }
+  #outskirtimg2 {
+    display: block;
+    margin-left: 0;
+  }
+  #blocksimg1 {
+    display: none;
+  }
+  #blocksimg2 {
+    display: block;
+  }
+}
+#servicejumbo1 {
+  display: block;
+}
+#servicejumbo2 {
+  display: none;
+}
+#precons1 {
+  display: block;
+}
+#precons2 {
+  display: none;
+}
+#cons1 {
+  display: block;
+}
+#cons2 {
+  display: none;
+}
+#designimg1 {
+  display: block;
+}
+#designimg2 {
+  display: none;
+}
+#sustimg1 {
+  display: block;
+}
+#sustimg2 {
+  display: none;
+}
+@media (max-width: 500px) {
+  #servicejumbo1 {
+    display: none;
+  }
+  #servicejumbo2 {
+    display: block;
+  }
+  #precons1 {
+    display: none;
+  }
+  #precons2 {
+    display: block;
+  }
+  #cons1 {
+    display: none;
+  }
+  #cons2 {
+    display: block;
+  }
+  #designimg1 {
+    display: none;
+  }
+  #designimg2 {
+    display: block;
+  }
+  #sustimg1 {
+    display: none;
+  }
+  #sustimg2 {
+    display: block;
+  }
 }
 .intro h2 {
   position: absolute;
@@ -416,215 +641,7 @@ header {
   padding-top: 31px;
   background-color: #D8D8D8;
 }
-.contact {
-  Background: #828282;
-  display: flex;
-  align-content: row;
-  color: white;
-  margin-top: 95px;
-  height: 200px;
-  padding-top: 64px;
-  padding-left: 82px;
-}
-.contact h4 {
-  font-size: 20px;
-  font-weight: regular;
-  line-height: 24px;
-}
-.contact input {
-  margin-top: 16px;
-  height: 44px;
-  width: 280px;
-  font-size: 16px;
-  padding-left: 5px;
-}
-.contact .interest p {
-  margin-top: 5px;
-  font-size: 13px;
-}
-.contact p {
-  font-size: 16px;
-  line-height: 26px;
-}
-.contact .ny {
-  margin-left: 57px;
-}
-.contact .fl {
-  margin-left: 58px;
-}
-.contact .ca {
-  margin-left: 72px;
-}
-footer {
-  Background: #828282;
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  color: white;
-  height: 50px;
-  padding-top: 21px;
-}
-#servicejumbo1 {
-  display: block;
-}
-#servicejumbo2 {
-  display: none;
-}
-#precons1 {
-  display: block;
-}
-#precons2 {
-  display: none;
-}
-#cons1 {
-  display: block;
-}
-#cons2 {
-  display: none;
-}
-#designimg1 {
-  display: block;
-}
-#designimg2 {
-  display: none;
-}
-#sustimg1 {
-  display: block;
-}
-#sustimg2 {
-  display: none;
-}
-.intro-service .services-header-pic {
-  display: block;
-  width: 100%;
-  margin: auto;
-  height: 250px;
-}
-.intro-service h2 {
-  position: absolute;
-  margin-top: 160px;
-  margin-left: 79px;
-  color: white;
-  font-size: 65px;
-  font-weight: bold;
-  line-height: 1.1;
-}
-.top-section {
-  margin: 54px 84px 0;
-  font-size: 16px;
-  line-height: 1.8;
-}
-.tabs {
-  width: 100%;
-  margin-top: 33px;
-}
-.tabs .tabs-items {
-  width: 100%;
-  height: 390px;
-  display: flex;
-  justify-content: center;
-  padding-top: 52px;
-}
-.tabs .tabs-item {
-  display: none;
-  width: 100%;
-  margin: 0 84px;
-}
-.tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-.tabs .tabs-item-selected {
-  display: flex;
-  height: 400px;
-  flex-direction: column;
-}
-.tabs .tabs-item-img-combo {
-  display: flex;
-  flex-direction: row;
-}
-.tabs .tab-pic {
-  padding-left: 20px;
-}
-.tabs .tabs-item-description {
-  margin-top: 6px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.tabs .tabs-links {
-  display: flex;
-  justify-content: center;
-}
-.tabs .tabs-link {
-  display: flex;
-  justify-content: center;
-  margin: 0 18px;
-  padding: 14px 0;
-  width: 188px;
-  font-size: 20px;
-  font-weight: bold;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.tabs .tabs-link:hover {
-  background-color: #222222;
-  color: #FFF;
-}
-.tabs .tabs-link-selected {
-  z-index: 2;
-  background-color: #5E9FB9;
-  color: white;
-}
-.tabs .tabs-link-selected:hover {
-  background-color: #222222;
-}
 @media (max-width: 500px) {
-  .container {
-    width: 100%;
-  }
-  .nav {
-    width: 100%;
-    padding-right: 16px;
-  }
-  .nav h1 {
-    margin-left: 10px;
-  }
-  .nav .hamburgerClose {
-    margin-right: 10px;
-  }
-  #mhp1 {
-    display: none;
-  }
-  #mhp2 {
-    display: block;
-  }
-  #homeimage1a {
-    display: none;
-  }
-  #homeimage1b {
-    display: block;
-  }
-  #villaimg1 {
-    display: none;
-  }
-  #villaimg2 {
-    display: block;
-    margin-left: 0;
-  }
-  #outskirtimg1 {
-    display: none;
-  }
-  #outskirtimg2 {
-    display: block;
-    margin-left: 0;
-  }
-  #blocksimg1 {
-    display: none;
-  }
-  #blocksimg2 {
-    display: block;
-  }
   .intro h2 {
     margin-top: 100px;
     margin-left: 20px;
@@ -767,87 +784,28 @@ footer {
     font-size: 24px;
     width: 440px;
   }
-  .contact {
-    height: 735px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-left: 20px;
-  }
-  .contact h4 {
-    font-size: 28px;
-  }
-  .contact input {
-    margin-top: 30px;
-    width: 440px;
-    height: 70px;
-    font-size: 24px;
-    color: gray;
-  }
-  .contact .interest p {
-    margin-top: 15px;
-    font-size: 18px;
-  }
-  .contact .ny {
-    margin-top: 30px;
-    margin-left: 0;
-    line-height: 2;
-  }
-  .contact .ny p {
-    font-size: 20px;
-  }
-  .contact .fl {
-    margin-top: 30px;
-    margin-left: 0;
-    line-height: 2;
-  }
-  .contact .fl p {
-    font-size: 20px;
-  }
-  .contact .ca {
-    margin-top: 30px;
-    margin-left: 0;
-    line-height: 2;
-  }
-  .contact .ca p {
-    font-size: 20px;
-  }
-  footer {
-    font-size: 18px;
-    height: 70px;
-    justify-content: left;
-    padding-left: 20px;
-  }
-  #servicejumbo1 {
-    display: none;
-  }
-  #servicejumbo2 {
-    display: block;
-  }
-  #precons1 {
-    display: none;
-  }
-  #precons2 {
-    display: block;
-  }
-  #cons1 {
-    display: none;
-  }
-  #cons2 {
-    display: block;
-  }
-  #designimg1 {
-    display: none;
-  }
-  #designimg2 {
-    display: block;
-  }
-  #sustimg1 {
-    display: none;
-  }
-  #sustimg2 {
-    display: block;
-  }
+}
+.intro-service .services-header-pic {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 250px;
+}
+.intro-service h2 {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 79px;
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.top-section {
+  margin: 54px 84px 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+@media (max-width: 500px) {
   .intro-service .services-header-pic {
     height: 310px;
   }
@@ -860,6 +818,73 @@ footer {
     font-size: 18px;
     margin: 37px 20px 0;
   }
+}
+.tabs {
+  width: 100%;
+  margin-top: 33px;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  padding-top: 52px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 100%;
+  margin: 0 84px;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+}
+.tabs .tabs-item-img-combo {
+  display: flex;
+  flex-direction: row;
+}
+.tabs .tab-pic {
+  padding-left: 20px;
+}
+.tabs .tabs-item-description {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.tabs .tabs-links {
+  display: flex;
+  justify-content: center;
+}
+.tabs .tabs-link {
+  display: flex;
+  justify-content: center;
+  margin: 0 18px;
+  padding: 14px 0;
+  width: 188px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #222222;
+  color: #FFF;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  background-color: #5E9FB9;
+  color: white;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: #222222;
+}
+@media (max-width: 500px) {
   .tabs {
     margin-top: 28px;
   }
